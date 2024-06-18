@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertimix - Cliente</title>
+    <link rel="stylesheet" href="css/stylesc.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script>
+        function abrirURL(url) {
+            document.getElementById('ventana').src = url;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>DEMA WELL MEXICO S.A DE C.V</h1>
+            <img src="imagenes/dema.jpg" alt="Fertimix Logo" class="logo">
+        </div> 
+    </header>
+    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarColor03">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="abrirURL('info.html');">Informacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="abrirURL('contacto.html');">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="abrirURL('_04_formularios.basico.html');">Producto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <iframe id="ventana" src="_09_cardsArray.html" width="1000" height="500" frameborder="0"></iframe>
+</body>
+</html>
